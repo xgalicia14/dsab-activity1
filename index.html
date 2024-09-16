@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Activtiy 1 DSA CarlGalicia</title>
+</head>
+<body>
+
+    <h1>CarlG</h1>
+
+    <script>
+        class Student {
+
+    constructor (id, fname, mname, lname, bdate, uname, emailadd, pass, homeadd) {
+        this.idNumber = id;
+        this.firstName = fname;
+        this.middleName = mname;
+        this.lastName = lname;
+        this.birthdate = bdate;
+        this.username = uname;
+        this.emailAddress = emailadd;
+        this.password = pass;
+        this.homeAddress = homeadd;
+        
+  }
+}
+
+        class Address {
+
+    constructor (hnumber, purokzone, bgy, muni, prov) {
+        this.houseNumber = hnumber;
+        this.purokOrZone = purokzone;
+        this.barangay = bgy;
+        this.municipality = muni;
+        this.province = prov;
+  }
+}
+
+    const homeAddress = new Address('38-7', 'Purok 2', 'Barangay 34', 'Legazpi City', 'Albay');
+    const student = new Student('01738', 'Carl Harvey', 'D.', 'Galicia', '2003-07-17', 'xgalicia14', 'carlgalicia3@gmail.com', 'hulaanmo14', homeAddress);
+
+    console.log(`ID Number: ${student.idNumber}`);
+    console.log(`First Name: ${student.firstName}`);
+    console.log(`Middle Name: ${student.middleName}`);
+    console.log(`Last Name: ${student.lastName}`);
+    console.log(`Birthdate: ${student.birthdate}`);
+    console.log(`Username: ${student.username}`);
+    console.log(`Email Address: ${student.emailAddress}`);
+    console.log(`Password: ${student.password}`);
+
+    console.log(`Home Address: ${homeAddress.houseNumber}`);
+    console.log(`Purok or Zone: ${homeAddress.purokOrZone}`);
+    console.log(`Baranggay: ${homeAddress.barangay}`);
+    console.log(`Municipality: ${homeAddress.municipality}`);
+    console.log(`Province: ${homeAddress.province}`);
+
+    </script>
+    
+</body>
+</html>
